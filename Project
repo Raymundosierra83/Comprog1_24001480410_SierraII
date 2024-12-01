@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int num1,num2,Total;
+   string Type;
+   cout <<"Calculator";
+   cout <<"\nA.Multiplication";
+   cout <<"\nB.Addition";
+   cout <<"\nC.Subtraction";
+   cout <<"\nD.Division";
+   cout <<"\n\nYou choose:";
+   cin >>Type;
+   
+   
+   if(Type=="A"||Type=="a"){
+   cout <<"\nMultiplication";
+   cout <<"\nEnter number:";
+   cin >>num1;
+   cout <<"Enter number:";
+   cin >>num2;
+   Total =num1*num2;
+   cout <<"\nTotal:"<<Total<<endl;
+   }
+   else if(Type=="B"||Type=="b"){
+   cout <<"\nAddition";
+   cout <<"\nEnter number:";
+   cin >>num1;
+   cout <<"Enter number:";
+   cin >>num2;
+   Total =num1+num2;
+   cout <<"\nTotal:"<<Total<<endl;
+   }
+   else if(Type=="C"||Type=="c"){
+   cout <<"\nSubtraction";
+   cout <<"\nEnter number:";
+   cin >>num1;
+   cout <<"Enter number:";
+   cin >>num2;
+   Total =num1-num2;
+   cout <<"\nTotal:"<<Total<<endl;
+   }
+   else if(Type=="D"||Type=="d"){
+   cout <<"\nDivision";
+   cout <<"\nEnter number:";
+   cin >>num1;
+   cout <<"Enter number:";
+   cin >>num2;
+   Total =num1/num2;
+   cout <<"\nTotal:"<<Total<<endl;
+   }else{
+    cout <<"Invalid pls try again. ";
+   }
+   
+   return 0;
+}
