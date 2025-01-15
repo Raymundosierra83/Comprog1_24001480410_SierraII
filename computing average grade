@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float prelim, midterm, finals;
+    
+    cout << "Enter Prelim grade: ";
+    cin >> prelim;
+    if (prelim < 0 || prelim > 100) {
+        cout << "Error: Prelim grade must be between 0 and 100." << endl;
+        return 0; 
+    }
+    
+    cout << "Enter Midterm grade: ";
+    cin >> midterm;
+    if (midterm < 0 || midterm > 100) {
+        cout << "Error: Midterm grade must be between 0 and 100." << endl;
+        return 0; 
+    }
+
+    cout << "Enter Final grade: ";
+    cin >> finals;
+    if (finals < 0 || finals > 100) {
+        cout << "Error: Final grade must be between 0 and 100." << endl;
+        return 0; 
+    }
+    
+    float finalGrade = (prelim * 0.30) + (midterm * 0.30) + (finals * 0.40);
+    
+    cout << "The final grade is: " << finalGrade << endl;
+
+    return 0;
